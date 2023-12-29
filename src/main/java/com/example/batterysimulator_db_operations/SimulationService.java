@@ -18,7 +18,7 @@ public class SimulationService {
         simulationRepo.save(sim);
     }
 
-    public Optional<Simulation> getSimulationBySimId(String simId) {
-        return simulationRepo.findById(Long.valueOf(simId));
+    public Optional<Simulation> getSimulationBySimId(Long simId) {
+        return simulationRepo.findById(simId);
     }
 }

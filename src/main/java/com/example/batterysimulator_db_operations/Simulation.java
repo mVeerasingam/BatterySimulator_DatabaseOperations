@@ -1,5 +1,6 @@
 package com.example.batterysimulator_db_operations;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,5 +23,6 @@ public class Simulation {
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "simulation_simId")
+    @JsonManagedReference
     private List<SimulationResults> simulationResults;
 }
