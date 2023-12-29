@@ -17,17 +17,13 @@ public class SimulationController {
 
     @GetMapping("/{simId}")
     public ResponseEntity<?> getSimulation(@PathVariable String simId) {
-        if (simId.length() > 5 || simId.isBlank()) {
-            return ResponseEntity.badRequest().body("simulationID is invalid");
-        }
+        Optional<Simulation> simulation = simulationService.getSimulationBySimId(Long.valueOf(simId));
 
-        Optional<Simulation> simulation = simulationService.getSimulationBySimId(simId);
-
-        if (simulation == null) {
+        if (simulation.isEmpty()) {
             return ResponseEntity.notFound().build();
         }
 
-        return ResponseEntity.ok(simulation);
+        return ResponseEntity.ok(simulation.get());
     }
 
     @PostMapping("/createSimulation")
