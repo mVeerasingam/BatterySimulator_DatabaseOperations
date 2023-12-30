@@ -1,5 +1,7 @@
 package com.example.batterysimulator_db_operations;
 
+import com.example.batterysimulator_db_operations.Clients.SimulationRepository;
+import com.example.batterysimulator_db_operations.POJOs.Simulation;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
