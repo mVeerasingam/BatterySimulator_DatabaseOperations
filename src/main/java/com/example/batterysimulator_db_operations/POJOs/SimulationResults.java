@@ -1,4 +1,4 @@
-package com.example.batterysimulator_db_operations;
+package com.example.batterysimulator_db_operations.POJOs;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
