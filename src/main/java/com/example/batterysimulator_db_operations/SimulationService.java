@@ -12,11 +12,13 @@ public class SimulationService {
     private final SimulationRepository simulationRepo;
 
     public SimulationService(SimulationRepository simulationRepo) {
+
         this.simulationRepo = simulationRepo;
     }
 
     //Save a simulation
     public void saveSimulation(Simulation sim) {
+
         simulationRepo.save(sim);
     }
 
