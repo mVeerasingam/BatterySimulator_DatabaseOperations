@@ -22,7 +22,7 @@ public class SimulationController {
         this.simulationService = simulationService;
     }
 
-    @GetMapping("/{simId}")
+    @GetMapping("getSimulation/{simId}")
     public ResponseEntity<?> getSimulation(@PathVariable String simId) {
         Optional<Simulation> simulation = simulationService.getSimulationBySimId(Long.valueOf(simId));
 
