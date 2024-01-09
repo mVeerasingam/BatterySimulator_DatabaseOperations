@@ -17,13 +17,13 @@ public class Simulation {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long simId;
+    private Long id;
 
     @Enumerated(EnumType.STRING)
     private SimulationType simulationType;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "simulation_simId")
+    @JoinColumn(name = "simulation_id")
     @JsonManagedReference
     private List<SimulationResults> simulationResults;
     @Column(nullable = true)

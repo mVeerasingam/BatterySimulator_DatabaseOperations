@@ -17,7 +17,7 @@ public class SimulationResults {
     private Long simResultsId;
 
     @ManyToOne
-    @JoinColumn(name = "simulation_simId")
+    @JoinColumn(name = "simulation_id")
     @JsonBackReference
     private Simulation simulation;
 
