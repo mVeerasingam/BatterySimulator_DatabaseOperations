@@ -1,4 +1,4 @@
-# Battery-Simulator-Microservice 🔋💥
+# Battery-Simulator-Database Operations
 ## Authors: Mark Veerasingam and Lucas Jeanes
 ### Description: 
 ATU 3rd Year CICD 1 Project
