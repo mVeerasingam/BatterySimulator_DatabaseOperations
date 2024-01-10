@@ -26,8 +26,6 @@ docker pull mveerasingam/batterysimulator_jobmanagerservice:rabbitmq
 
 - We've updated the [Docker Compose File in Job Manager to Containerise the above images from Docker](https://github.com/mVeerasingam/BatterySimulator-JobManager/blob/master/docker-compose.yml)
 
-![Battery Simulator](https://github.com/mVeerasingam/Battery-Simulator-Service/raw/main/BatterySim_CICD.drawio.png)
-
 ### Supporting Microservices
 [Battery Simulator Microservice 🔋💥](https://github.com/mVeerasingam/Battery-Simulator-Microservice)
 [Battery Job Manager 🔋🔄]([https://github.com/mVeerasingam/Battery_Sim_CICD.draw.io](https://github.com/mVeerasingam/BatterySimulator-JobManager))
